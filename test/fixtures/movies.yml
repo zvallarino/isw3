@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  genre: MyText
+  description: MyText
+  thumbnail: MyString
+  backdrop: MyString
+  rating: 1
+  runtime: 1
+  release_date: MyString
+  movie_link: MyString
+
+two:
+  title: MyString
+  genre: MyText
+  description: MyText
+  thumbnail: MyString
+  backdrop: MyString
+  rating: 1
+  runtime: 1
+  release_date: MyString
+  movie_link: MyString
