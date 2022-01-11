@@ -1,15 +1,15 @@
 function DeleteProfilePage({pageReload, user}){
 
   function deleteThatPerson(e){
-    // ///deleteperson 
-    // console.log(user.id)
-    // fetch (`http://localhost:9292/profiles/${user.id}`,{
-    //     method: 'DELETE',
-    // })
-    //   .then (resp => resp.json())
-    //   .then (deleted => console.log("deleted the user"))
+    // /deleteperson 
+    console.log(user.id)
+    fetch (`/profiles/${user.id}`,{
+        method: 'DELETE',
+    })
+      .then (resp => resp.json())
+      .then (deleted => console.log("deleted the user"))
   
-    //   pageReload(e)
+      pageReload(e)
   }
   
   // const deleteUser = (id) => {

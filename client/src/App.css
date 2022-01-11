@@ -1,6 +1,18 @@
+/* * {
+  background-color: white;
+} */
+
 .App {
   text-align: center;
 }
+
+html {
+  /* background-color: rgba(21,0,0); */
+  background-color: rgba(0,0,0);
+}
+
+
+ 
 
 .App-logo {
   height: 40vmin;
@@ -28,11 +40,481 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.candy {
+  display:none
 }
+
+.LoginPage{
+  display: flex;
+  flex-direction: column;
+}
+
+/* .Everything .LoginButton button{
+  /* display: flex;
+  background:#f52626;
+  height: 1000px;
+  width: 1000px;
+  font-size: 500px; */
+  /* This is the log in button on the title page, we created a div for this guy in the Title.js on lines 56 - 60. Was still trying to get this to look good before hopping off for the night.*/
+.profileCard{
+  display:flex;
+  justify-content: center;
+  /* border: 10px solid red; */
+  width:100px;
+  height:100px;
+  color: white;
+  text-align: center;
+}
+
+.profileCard img{
+  display:flex;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+
+
+
+
+
+.MovieLine{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  /* border: 2px solid grey; */
+}
+
+.searchform{
+  display: flex;
+  margin-left: 100px;
+  height: 30px;
+  /* width: 20px; */
+  color: white;
+}
+
+.searchform input{
+  /* display: flex;
+  justify-content: center; */
+  height: 30px;
+  width: 300px;
+  color: black;
+  border-radius: 20px;
+}
+
+.MovieLine button{
+  margin-top: 15vh;
+  border-radius: 50%; 
+  height: 10vh;
+  width: 5vw;
+  background-color: grey;
+  font-weight: bolder;
+}
+
+.MovieCard{
+  display:flex;
+  flex-direction: column;
+  border: 5px solid grey;
+  color: white;
+  margin: 15px;
+  width: 13vw;
+  height: 38vh;
+}
+.MovieCard:hover{
+  background:#f52626;
+  color: black;
+  border: 5px solid #f52626;
+  box-shadow: 20px 20px 200px rgba(255, 255, 255, 1);
+}
+
+
+.MovieCard h3{
+  display:flex;
+  overflow-wrap: break-word;
+  margin-left:0.4vh;
+  margin-bottom : 0;
+}
+
+.MovieCard p{
+  display:flex;
+  margin-left:0.4vh;
+
+}
+
+.MovieCard img{
+  display: flex;
+  width: 13vw;
+  height: 30vh;
+}
+
+.NavImage{
+  display: flex;
+  /* border: 10px solid blue; */
+  width:100%;
+  justify-content: end;
+}
+
+.dropdown{
+  display: flex;
+  width: 13%;
+  /* border: 10px solid yellow; */
+  flex-direction: column;
+}
+
+.NavImage img{
+  /* border: 10px solid blue; */
+  width:130px;
+  height:120px;
+  /* align-items: flex-start; */
+  border-radius: 50%;
+}
+
+
+
+.fakedropdown{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.fakedropdown button{
+ margin:0
+}
+
+.MovieDetailPicture{
+  display: flex;
+  flex-direction: row;
+}
+
+.MovieDetailPicture img{
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  width: 50vw
+}
+
+.MovieDetail{
+  display: flex;
+  flex-direction: column;
+  color: white
+}
+
+.MovieDetail h2 {
+  font-weight: bolder;
+  font-size: 300%;
+}
+
+.MovieDetail h4 {
+  font-weight: bolder;
+  font-size: 150%;
+  margin-top: 0;
+  padding: 0;
+}
+
+.MovieDetail p {
+  font-weight: bolder;
+  font-size: 150%;
+}
+
+
+.MainTitle {
+  color:white;
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+.userProfileLine{
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 10px solid green; */
+  margin-top: 40vh;
+  height: 100%;
+  width: 100%;
+}
+
+.userProfileLine button{
+  border-radius: 50%;
+  width: 10vh;
+}
+
+.AddNewUserLine{
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 10px solid green; */
+  margin-top: 40vh;
+  height: 100%;
+  width: 100%;
+}
+
+.AddNewUserLine button{
+  width: 10vh;
+}
+
+.LegalYoYo {
+  display:flex; 
+  flex-direction:column; 
+  align-items: center;
+  color:white;
+  font-size: 50px;
+}
+
+.LegalYoYo img {
+  width: 20vw;
+  height: 60vh;
+}
+
+.LegalYoYo button{
+width: 15vw;
+height: 7vh;
+font-size: .6em;
+}
+
+.AddNewUserLine .searchform label{
+  display: flex;
+  text-align: center;
+  font-size: 2em;
+  color:white;
+}
+
+.spaceBetween{
+  width: 8vh;
+}
+
+.BoxForTitleImage{
+  display:flex;
+  display: row;
+  width: 100vw;
+  height: 80vh;
+  /* border: 10px solid blue; */
+}
+
+.BoxForFont{
+  display:flex;
+  display: row;
+  width: 100vw;
+  height: 8vh;
+  /* border: 10px solid blue; */
+}
+
+.pleaseworkeasilypart2{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  color:white;
+}
+
+.pleaseworkeasilypart2 p button{
+  display:flex;
+  font-size: 1em;
+  width:10vw;
+  height: 8vh;
+}
+
+.pleaseworkeasilypart2 img{
+  display:flex;
+  width:50vw;
+  height: 50vh;
+}
+
+
+.pleaseworkeasilypart2 p{
+  display:flex;
+  font-size: 2em;
+}
+.pleaseworkeasilypart2 .BoxForTextZZ{
+  display:flex;
+  flex-direction: column;
+  border: 10px solid green;
+}
+
+.BoxForFont .textSubtitle {
+  display:flex;
+  color:white;
+  font-size: 3em;
+  /* border: 10px solid blue; */
+}
+
+.SpaceBetweenFontLeft{
+  display:flex;
+  width: 35vw;
+    /* border: 10px solid green; */
+}
+
+.SpaceBetweenFontRight{
+  display:flex;
+  width: 20vw;
+    /* border: 10px solid green; */
+}
+
+
+.textSubtitle{
+  display:flex;
+  color:white;
+  /* border: 10px solid blue; */
+}
+
+.SpaceBetweenTitle{
+  display:flex;
+  width: 30vw;
+    /* border: 10px solid green; */
+}
+
+.BoxForTitleImage img{
+  display:flex;
+  width: 40vw;
+
+}
+
+
+.BoxForButton{
+  display:flex;
+  display: row;
+  width: 100vw;
+  height: 5vh;
+  /* border: 10px solid blue; */
+}
+
+.BoxForButton button{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  width: 5vw;
+  height: 3vh;
+  font-size: 1.5em;
+}
+
+.SpaceBetweenButton{
+  display:flex;
+  width: 47.5vw;
+    /* border: 10px solid green; */
+}
+
+
+
+
+
+
+
+/* 
+body {
+  background-color: #012839;
+  text-align: center;
+  padding-top: 50px;
+} */
+
+.MovieLine .Button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#f52626;
+  color:#fff;
+}
+/* button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  /* transition:400ms ease all; */
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+button{
+  margin:10px 4px; 
+  width:80px;
+  height:40px;
+  color:#fff;
+  font-family:sans-serif;
+  text-transform:uppercase;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FF6766;
+}
+
+.ImagePlayer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  font-size:2em;
+  
+
+}
+
+
+
+
+/* .Everything .LoginButton{
+  display:flex;
+  justify-content: center;
+} */
+
+
+/* .Everything .LoginButton butto
+n{
+  display:flex;
+  
+  background:#f52626;
+  text-align: center;
+  justify-content: center;
+  color:#fff;
+  border:none;
+
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius: 50%;
+}
+button:hover{
+  background:#fff;
+  color:#fff;
+} */
+/* button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  /* transition:400ms ease all; */
+/* 
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+} */
+
+
+

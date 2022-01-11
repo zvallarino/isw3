@@ -13,6 +13,7 @@ end
 
 # Our application
 run ApplicationController
+use Rack::JSONBodyParser
 
 run Rails.application
 Rails.application.load_server

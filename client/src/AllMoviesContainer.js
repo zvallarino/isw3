@@ -17,7 +17,7 @@ function AllMoviesContainer({setappearForGenres, allMovies, setMovie, setShow, s
             <div className="searchform">
             <label>Search: <input type = "text" value = {search} onChange = {handleSearch}/></label>
             </div>
-        <div className="MovieLine">
+            <div className="MovieLine">
             {allM}
         </div>
         </>

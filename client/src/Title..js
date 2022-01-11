@@ -23,6 +23,7 @@ function Title({pageReload}){
         fetch('/movies/genres')
         .then((resp) => resp.json())
         .then((data) => setGenres(data))
+        
     },[])
 
     useEffect(() => {
