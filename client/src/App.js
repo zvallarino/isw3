@@ -10,11 +10,11 @@ function App() {
 
 //you
 
-  useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/hello")
+  //     .then((r) => r.json())
+  //     .then((data) => setCount(data.count));
+  // }, []);
 
   return (
     <BrowserRouter>
