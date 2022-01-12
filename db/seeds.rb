@@ -1,7 +1,7 @@
 puts "🌱 Seeding spices..."
 
 require "httparty"
-require "pry"
+
 fullArray = 
 [
  [308, "Broken Flowers"],

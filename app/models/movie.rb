@@ -15,4 +15,5 @@ class Movie < ApplicationRecord
       self.all.sample(5)
   end 
   
+  
 end
