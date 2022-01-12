@@ -16,7 +16,7 @@ gem "puma", "~> 5.0"
 # gem "jbuilder"
 
 ## Possibly ADD THIS
-# gem "rack-contrib", "~> 2.3"
+gem "rack-contrib", "~> 2.3"
 ## Possibly ADD THIS
 
 

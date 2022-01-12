@@ -20,14 +20,14 @@ function Title({pageReload}){
     },[])
 
     useEffect(() => {
-        fetch('/movies/genres')
+        fetch('/moviegenres')
         .then((resp) => resp.json())
         .then((data) => setGenres(data))
         
     },[])
 
     useEffect(() => {
-        fetch('/movies/suggested')
+        fetch('/moviesuggested')
         .then((resp) => resp.json())
         .then((data) => setSuggested(data))
     },[])

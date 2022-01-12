@@ -1,22 +1,38 @@
 class ProfilesController < ApplicationController
-  set :default_content_type, 'application/json'
 
   def index
     profiles = Profile.all
     render json: profiles, status: :ok
   end 
 
-  post "/profiles" do # This should be able to create new users 
-    new_profile = Profile.create(
-      user_name: params[:user_name],
-      profile_img: params[:profile_img]
-    )
-    new_profile.to_json
+  def show
+
+    profile = find_profile
+    render json: profile, status: :ok
+
+  end 
+
+  def create
+    profile = Profile.create!(profile_params)
+    render json: profile, status:201
+  end 
+
+  def destroy
+    profile = find_profile
+    camper.destroy
+    head :no_content
+  end 
+
+  private
+
+  def profile_params
+      params.permit(:user_name, :profile_img)
   end
 
-  delete "/profiles/:id" do # This should be able to delete users 
-    delete_user = Profile.find(params[:id])
-    delete_user.destroy
-  end
+  def find_profile
+    Profile.find(params[:id])
+  end 
 
-end
+  end 
+
+ 
